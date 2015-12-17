@@ -6,9 +6,9 @@ prices = {
 }
 stock = {
     "banana" : 6,
-    "apple"  : 0,
+    "apple" : 0,
     "orange" : 32,
-    "pear"   : 15,
+    "pear" : 15,
 }
 
 for key in prices:
@@ -16,3 +16,12 @@ for key in prices:
     print "price: %s" % prices[key]
     print "stock: %s" % stock[key]
     print
+
+total = 0.0
+
+for item in prices:
+    multiply = prices[item] * stock[item]
+    print multiply
+    total = total + multiply
+
+print total
