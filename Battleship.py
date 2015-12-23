@@ -14,7 +14,7 @@ print_board(board)
 
 def random_row(board):
     return randint(0, len(board) - 1)
-
+# TODO Why [0] is used here?
 def random_col(board):
     return randint(0, len(board[0]) - 1)
 
@@ -24,7 +24,7 @@ print ship_row
 print ship_col
 
 for turn in range(4):
-
+# TODO How to save results of previous guesses?
     guess_row = int(raw_input("Guess Row:"))
     guess_col = int(raw_input("Guess Col:"))
 
@@ -34,6 +34,7 @@ for turn in range(4):
     else:
         if (guess_row < 0 or guess_row > 4) or (guess_col < 0 or     guess_col > 4):
             print "Oops, that's not even in the ocean."
+# TODO Useless check. It should compare guesses with all previous variants.
         elif(board[guess_row][guess_col] == "X"):
             print "You guessed that one already."
         else:
