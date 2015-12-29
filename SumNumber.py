@@ -6,8 +6,14 @@ i = 0
 
 x = int(raw_input("Please, enter a number: "))
 
+# count from 1 to x
 for i in range(x):
     i = i + 1
+    x_sum.append(i)
+
+# count from x to 1
+for i in range(x, 1, -1):
+    i = i - 1
     x_sum.append(i)
 
 print
