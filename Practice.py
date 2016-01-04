@@ -8,5 +8,6 @@ while choice != 'y' and choice != 'n':  # Fill in the condition (before the colo
 print "Passed"
 """
 
-for i in range(1,5):
-    print 6 % i
+for i in range(2, 9):
+    print "divided by", i
+    print 9 % i
