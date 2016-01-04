@@ -4,6 +4,7 @@
 x_sum = []
 i = 0
 
+#TODO Check type of variable
 x = int(raw_input("Please, enter a number: "))
 
 # count from 1 to x
