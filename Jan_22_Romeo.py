@@ -17,5 +17,7 @@ for line in fhandle:
             words_list.append(word)
 
 words_list.sort()
+
+print
 print words_list
 
