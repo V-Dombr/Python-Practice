@@ -11,9 +11,7 @@ for line in fhandle:
     print line.rstrip()
     words_from_line = line.split()
     for word in words_from_line:
-        if word in words_list:
-            continue
-        else:
+        if word not in words_list:
             words_list.append(word)
 
 words_list.sort()
