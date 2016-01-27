@@ -1,5 +1,5 @@
 fname = raw_input("Please, enter a file name: ")
-words_list = []
+words_list = list()
 
 try:
     fhandle = open(fname)
@@ -8,10 +8,14 @@ except:
     quit()
 
 for line in fhandle:
+    print line.rstrip()
     words = line.split()
-    words_list.append(word)
-    for word in words_list:
-        if
+    for word in words:
+        if word in words_list:
+            continue
+        else:
+            words_list.append(word)
 
-print words
+words_list.sort()
+print words_list
 
